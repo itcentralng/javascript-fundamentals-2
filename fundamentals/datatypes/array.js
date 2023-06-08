@@ -1,0 +1,16 @@
+people = ["Amrah", "Khalifa", "Mustapha", ["Mansur", "Isa"]]
+people2 = ['Ahmad', 'Ziyad']
+console.log(people.length)
+console.log(people.concat(people2))
+console.log(people.at(0).indexOf("a"))
+console.log(people.slice(0,3))
+people.splice(0, 2, 'Musa')
+console.log(people)
+people.push('Zainab')
+console.log(people)
+people.pop('Zainab')
+console.log(people)
+people.shift()
+console.log(people)
+people.unshift('Kabir')
+console.log(people)
