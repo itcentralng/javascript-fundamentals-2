@@ -24,6 +24,6 @@ console.log(person4.repeat(3));
 console.log(person4.replace('a', 'er'));
 console.log(person4.replaceAll('a', 'er'));
 console.log(person4.slice(1, 6));
-console.log(person3.split(' '));
+console.log(person4.split('f'));
 console.log(person3.startsWith('J'));
 console.log(person3.startsWith('j'));
