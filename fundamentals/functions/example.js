@@ -48,3 +48,27 @@ console.log(product(10, 2)+5)
 // and items a list of objects containing names and prices of some items. Make it
 // such that your function returns a new list containing only the items that are
 // less than or equal the budget.
+
+const shopper = (budget, items)=>{
+    let selectedItems = []
+    for (let i=0; i<items.length; i+=1){
+        if (items[i].price <= budget){
+            selectedItems.push(items[i])
+        }
+    }
+    return selectedItems;
+}
+
+let budget = 600;
+let items = [
+    {item:'Cake', price:500},
+    {item:'Ice Cake', price:1500},
+    {item:'Ice Cream', price:200},
+]
+
+
+console.log(shopper(budget, items))
+
+// Q3: Write a function that generate random username for a user given their first and 
+// last name, for example: Abubakar Sani => as2021, Musa Saleh => ms52 in this format.
+
