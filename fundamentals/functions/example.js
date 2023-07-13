@@ -72,3 +72,15 @@ console.log(shopper(budget, items))
 // Q3: Write a function that generate random username for a user given their first and 
 // last name, for example: Abubakar Sani => as2021, Musa Saleh => ms52 in this format.
 
+const generateUsername = (name)=>{
+    let initials=""
+    for (let i=0; i<name.split(' ').length; i+=1){
+        initials+= name.split(' ')[i][0]
+    }
+    let counter = name.length
+    let username = initials+counter
+    return username.toLowerCase()
+}
+
+console.log(generateUsername("Ahmad Sani Yariman Bakura"))
+console.log(generateUsername("Mustapha Samiulhaq"))
